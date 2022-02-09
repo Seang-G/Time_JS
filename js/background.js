@@ -1,7 +1,7 @@
-const fs = require('fs')
-
 const background = document.querySelector('#background');
+const numberOfImg = 5;
 
-fs.readFile('src/background', 'utf8', (err, data) => {
-    console.log(data);
-});
+const randNumber = Math.floor(Math.random() * numberOfImg);
+const link = `${randNumber}.jpg`;
+
+background.src = `img/${link}`;

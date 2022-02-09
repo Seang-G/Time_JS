@@ -11,16 +11,35 @@
 <body>
     <img id="background" src="">
     <div id="background-cover">
-        <div>
+        <div id="stopwatch">
+            <span id="saved" class="hidden">000</span>
+            <h1 id="watch">00:00.00</h1>
+            <div id='stopwatch-btn'>
+                <input type="button" value="start" class="normal"></input>
+                <div id="started" class="hidden">
+                    <input type="button" value="stop" class="caution left"></input>
+                    <input type="button" value="record" class="normal right"></input>
+                </div>
+                <div id="stopped" class="hidden">
+                    <input type="button" value="resume" class="normal left"></input>
+                    <input type="button" value="reset" class="caution right"></input>
+                </div>
+            </div>
+            <ul id="record-list">
+
+            </ul>
         </div>
-        <div>
-            <h3 id="date">0000.00.00.XXX</h3>
+        <div id="now">
+            <h5 id="date">0000.00.00.XXX</h3>
             <h1 id="clock">00:00:00</h1>
         </div>
-        <div>
+        <div id="alarm">
+           <h1>00:00:00</h1>
         </div>
     </div>
     <script src="js/clock.js"></script>
     <script src="js/background.js"></script>
+    <script src="js/stopwatch.js"></script>
+    <script src="js/window.js"></script>
 </body>
 </html>
