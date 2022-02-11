@@ -1,2 +1,2 @@
 # Time_JS
-<a href="https://seang-g.github.io/Time_JS/">Link</a>
+<a href="https://seang-g.github.io/Time_JS/" target="_blank">Link</a>
