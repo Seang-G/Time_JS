@@ -14,7 +14,7 @@ function setTime(date){
 }
 
 function setDate(date){
-    const dayText = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+    const dayText = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 
     let year = date.getFullYear();
     let month = date.getMonth();

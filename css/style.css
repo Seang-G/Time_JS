@@ -1,18 +1,18 @@
 body{
-    size: 100%;
     font-family: 'Bebas Neue', cursive;
     margin: 0;
-    font-size: 500%;
+    font-size: 300%;
 }
 
 input{
     font-family: 'Bebas Neue', cursive;
-    font-size: 40%;
-    padding-top: 5px;
+    font-size: 60%;
+    padding-top: 0px;
     height: 3rem;
     background-color: #9c9c9c88;
     border-radius: 13px;
     border-style: hidden;
+    vertical-align: top;
 }
 
 ul{
@@ -37,7 +37,7 @@ ul{
 }
 
 .caution{
-    color: rgb(85, 37, 37);
+    color: rgb(85, 37, 37) !important;
 }
 
 .normal{
@@ -56,15 +56,16 @@ ul{
 #background-cover{
     width: 100vw;
     height: 100vh;
-    position: fixed;
+    position: relative;
     background-color: #00000081;
     z-index: 2;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     overflow: auto;
 }
 
 #now{
+    font-size: 100%;
     text-align: center;
     color:rgb(126, 132, 156);
     text-shadow: 0px 0px 5px rgb(126, 132, 156);
@@ -74,10 +75,15 @@ ul{
 
 #date{
     margin-bottom: 0;
+    margin-top: 30vh;
 }
 
 #clock{
     margin-top: 0;
+}
+
+#stopwatch{
+    margin-left: 10%;
 }
 
 #stopwatch-btn > input{
@@ -92,6 +98,7 @@ ul{
 }
 
 #watch{
+    margin-top: 30vh;
     text-align: center;
     color:rgb(168, 194, 160);
     text-shadow: 0px 0px 5px rgb(168, 194, 160);
@@ -99,10 +106,44 @@ ul{
 }
 
 #alarm{
+    margin-right: 10%;
     text-align: center;
     color:rgb(194, 171, 160);
     text-shadow: 0px 0px 5px rgb(194, 171, 160);
     margin-bottom: 0;
+}
+#alarm-clock{
+    margin: 25vh 0vw 0 0vw;
+    display: grid;
+    grid-template-columns: 100fr 1fr 1fr 0.5fr 1fr 1fr 0.5fr 1fr 1fr 100fr;
+}
+
+#alarm-clock > span > button{
+    background-color: #9c9c9c00;
+    font-size: 1.5rem;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    border: none;
+}
+
+#alarm-clock > span > h1{
+    margin: 0;
+}
+
+#alarm-button > input{
+    color: rgb(194, 171, 160);
+    padding: 0;
+    width: 100%;
+}
+
+#alarm-stopped{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#alarm-stopped > input{
+    color: rgb(194, 171, 160);
 }
 
 @keyframes slide{

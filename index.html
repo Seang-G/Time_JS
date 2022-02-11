@@ -34,12 +34,57 @@
             <h1 id="clock">00:00:00</h1>
         </div>
         <div id="alarm">
-           <h1>00:00:00</h1>
+            <span id="alarm-saved" class="hidden">000000</span>
+            <div id="alarm-clock">
+                <span></span>
+                <span>
+                    <button>🔺</button>
+                    <h1>0</h1>
+                    <button>🔻</button>
+                </span>
+                <span>
+                    <button>🔺</button>
+                    <h1>0</h1>
+                    <button>🔻</button>
+                </span>
+                <h1>:</h1>
+                <span>
+                    <button>🔺</button>
+                    <h1>0</h1>
+                    <button>🔻</button>
+                </span>
+                <span>
+                    <button>🔺</button>
+                    <h1>0</h1>
+                    <button>🔻</button>
+                </span>
+                <h1>:</h1>
+                <span>
+                    <button>🔺</button>
+                    <h1>0</h1>
+                    <button>🔻</button>
+                </span>
+                <span>
+                    <button>🔺</button>
+                    <h1>0</h1>
+                    <button>🔻</button>
+                </span>
+                <span></span>
+            </div>
+            <div id="alarm-button">
+                <input type="button" id="alarm-start" value="start"></input>
+                <input type="button" id="alarm-stop" value="stop" class='hidden caution'></input>
+                <div id="alarm-stopped" class="hidden">
+                    <input type="button" id="alarm-resume" value="resume" class="left"></input>
+                    <input type="button" id="alarm-reset" value="reset" class="caution right"></input>
+                </div>
+            </div>
         </div>
     </div>
     <script src="js/clock.js"></script>
     <script src="js/background.js"></script>
     <script src="js/stopwatch.js"></script>
     <script src="js/window.js"></script>
+    <script src="js/alarm.js"></script>
 </body>
 </html>
